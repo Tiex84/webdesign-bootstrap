@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - UX/UI Designer</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+      <div class="container-lg">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-nav ms-lg-3">Let's Talk</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container-lg">
+      <!-- Hero Section -->
+      <section class="hero-section" id="home">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="badge-available">Available for projects</div>
+            <h1>Crafting Digital <span class="accent">Experiences</span> with Precision.</h1>
+            <p class="hero-text">
+              Specializing in high-impact web and mobile applications through research-driven design and bold aesthetics. I turn complex problems into elegant digital solutions.
+            </p>
+            <div class="hero-buttons">
+              <button class="btn-primary-custom">
+                View My Work
+                <span class="material-symbols-outlined" style="font-size: 1.25rem;">arrow_downward</span>
+              </button>
+              <button class="btn-secondary-custom">Read Bio</button>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-image">
+              <div class="hero-image-inner" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBF12YJUjOaCgvceTnK4AbEsPNDSIeiZ9-T6lrN-OIS2B7Mt4TZ8BBJW6wkqD2NZuEazHkEC5Vb2vO0mCB0CaOJHSUvgyeBraPXIPiLokSTgHXDKCd5YekGH8w3G-yb2epwL8uMpfn45THWNKKfzGJltF9sFQ70obuZckw0zZau03WRpallql1JaCflvjfZRmAHNdYVeogZe8fbgPPt_1nzDRjaK8sRk39mS-8PF-DZ9N0nlUAlMJWOlw1x5GKRq43zay1RhqXmg");'></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Expertise Section -->
+      <section class="expertise-section" id="about">
+        <div class="mb-5">
+          <p class="section-label">Core Expertise</p>
+          <h2 class="section-title">Bringing a comprehensive approach to every digital product.</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="expertise-card">
+              <div class="expertise-icon">
+                <span class="material-symbols-outlined">palette</span>
+              </div>
+              <h4>Visual Identity</h4>
+              <p>Creating cohesive brand systems and visual languages that resonate with users across all touchpoints.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="expertise-card">
+              <div class="expertise-icon">
+                <span class="material-symbols-outlined">animation</span>
+              </div>
+              <h4>Prototyping</h4>
+              <p>Building high-fidelity interactive prototypes to validate workflows and user journeys before development.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="expertise-card">
+              <div class="expertise-icon">
+                <span class="material-symbols-outlined">bar_chart</span>
+              </div>
+              <h4>UX Research</h4>
+              <p>Deep diving into user behavior and data-driven insights to inform architecture and functionality.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Works Section -->
+      <section class="works-section" id="work">
+        <div class="works-header">
+          <div class="works-title">
+            <p class="section-label">Portfolio</p>
+            <h2>Selected Works</h2>
+          </div>
+          <p class="works-count">Showing 4 of 12 Projects</p>
+        </div>
+
+        <div class="project-grid">
+          <div class="row g-4">
+            <!-- Large Card -->
+            <div class="col-lg-8">
+              <div class="project-card" style="aspect-ratio: 16/10;">
+                <div class="project-image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCjPMQ-JyuE5hzEfthhpNjcuu4pZ5AhwzyArX1FCwvsSB4y5-Eki_uG_ApTj2BmkDPALj2SRAwTZ1_fVMyTTzH2f2ak1KJjLxBd4wao7I0EmZKGVwF6iVxzo6H8N7Uz06idDI4C3OSjv_pUJgdSEUGGEwSDQ1v0UI4VpNDxdhZ8-N2ItVDp-AvCbFOZ3OS7ZZ4j5JOxlAeRUWJMvrZbM42tJrZ6KQSOEPyYTpS0AkBpr_SdRoQ7cvqudPTJ9ptslg0ja3pNDmB0dw");'></div>
+                <div class="project-overlay">
+                  <p class="project-category">Fintech</p>
+                  <h3 class="project-title">Lumina Wealth Management</h3>
+                  <p class="project-description">A complete overhaul of the investment dashboard for professional wealth managers.</p>
+                  <a href="#" class="project-link">
+                    View Project
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Square Card -->
+            <div class="col-lg-4 col-md-6">
+              <div class="project-card" style="aspect-ratio: 1/1;">
+                <div class="project-image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCaJBA3jITy_q8dhTjnPsdxqvuoV7JIIQ8ycegNk_n62d47z3HrPVyb82sgWgcT_z1LT4_xerNWNjPCRhbL6wq0w_hSFSlqPdFCbY6dyZc0hcG_2VHCitOch_zEbLycoHpLn5BHhRkj3U3JgOyEA035BlQF3qeIZaOyT2W8rA-i73TwKaJKDpSSOgVAbd1naO0gVxLDTTdopiHUF-_3Oh8BTv3zZizbFrvPgEbIRFUzjKnKhzPBHP6rdvXDrcQkAYdyKqx3BXG46A");'></div>
+                <div class="project-overlay">
+                  <p class="project-category">E-commerce</p>
+                  <h3 class="project-title">Verde Marketplace</h3>
+                  <a href="#" class="project-link">
+                    View Case
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Another Square Card -->
+            <div class="col-lg-4 col-md-6">
+              <div class="project-card" style="aspect-ratio: 1/1;">
+                <div class="project-image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGyIUBne10CDmNdnyxh31mD6EMWM6-N9xJP0OTLFAhQt1J9J_F4WzptNqXE0gqAi51LGQmNjVYsJo4OV-VWJWOMCHNR6tf3a3K7rITJ7Nh3U9iDjeqFfuAMuaQCcNBww8aIqhClNLltrrzX8lC6qHqHBJXymwaeIn8xpn8jRrm4_jSDvC_JetCZzJBr6Nc50mW1S2jISmpYCRvcrI-C-IUhUJcP5HXAVhBu5EmWfTqfy2KdYOrresXl4voREUezEJaYK3jtGHXeA");'></div>
+                <div class="project-overlay">
+                  <p class="project-category">HealthTech</p>
+                  <h3 class="project-title">Pulse Fitness Tracker</h3>
+                  <a href="#" class="project-link">
+                    View Case
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Another Large Card -->
+            <div class="col-lg-8">
+              <div class="project-card" style="aspect-ratio: 16/10;">
+                <div class="project-image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDB7zHMa4u5ww9YaWYr-G0ZDoD-__EDjdirq-rCK3hfQNbFQBXa-fAd5dfnHAt7X1lopOQ8_iVhSQKomTkiMM5S4H2QUBSs1Nb6IAxxCpi-6vi15hCjk3D6-BEvMzA7tWJANPJ7qgNfy826eSY4gJYXSCJfJKtcE1stavMxAQ98uopnto7MNICvwtUC9N7uib71KPDwn5iLfB9gWxEBUtHXaLpcuFx6nq9CAjjVWZfzXtLzxIpkJ1FUPOFN4sUEHxV8iI7G2LujMQ");'></div>
+                <div class="project-overlay">
+                  <p class="project-category">SaaS</p>
+                  <h3 class="project-title">Nexus Data Suite</h3>
+                  <p class="project-description">Designing a scalable design system for a complex data analytics platform.</p>
+                  <a href="#" class="project-link">
+                    View Project
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a href="#" style="font-weight: 700; border-bottom: 2px solid var(--accent-lime); color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 1rem; padding-bottom: 0.5rem; transition: gap 0.3s ease;">
+            View Archive Projects
+            <span class="material-symbols-outlined">trending_flat</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section" id="contact">
+        <div class="cta-content">
+          <h2>Have a project in mind? Let's build something <span class="accent-lime">exceptional</span> together.</h2>
+          <p class="cta-text">Currently accepting new projects. Reach out for a free consultation.</p>
+          <div class="cta-buttons">
+            <button class="btn-cta-primary">
+              Contact Me
+              <span class="material-symbols-outlined">mail</span>
+            </button>
+            <button class="btn-cta-secondary">
+              Book a Call
+              <span class="material-symbols-outlined">calendar_today</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container-lg">
+      <div class="footer-content">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z" fill="currentColor"></path>
+            </svg>
+            <h2>UX/UI Designer</h2>
+          </div>
+          <div class="footer-links ms-lg-5">
+            <a href="#">LinkedIn</a>
+            <a href="#">Dribbble</a>
+            <a href="#">Instagram</a>
+            <a href="#">Behance</a>
+          </div>
+        </div>
+        <p class="footer-copyright">© 2024 Built with Precision</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

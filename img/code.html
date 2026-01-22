@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UX/UI Designer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1a525b",
+                        "accent-lime": "#A7FF83",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#131d1f",
+                    },
+                    fontFamily: {
+                        "display": ["Epilogue", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+        .sticky-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white antialiased transition-colors duration-300">
+<!-- Sticky Navigation -->
+<nav class="sticky top-0 z-50 border-b border-slate-200 dark:border-[#2a3e41] bg-background-light/80 dark:bg-background-dark/80 sticky-nav">
+<div class="max-w-[1200px] mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary dark:text-accent-lime">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-black tracking-tighter uppercase">Portfolio</h2>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-bold uppercase tracking-widest hover:text-primary dark:hover:text-accent-lime transition-colors" href="#">Home</a>
+<a class="text-sm font-bold uppercase tracking-widest hover:text-primary dark:hover:text-accent-lime transition-colors" href="#">Work</a>
+<a class="text-sm font-bold uppercase tracking-widest hover:text-primary dark:hover:text-accent-lime transition-colors" href="#">About</a>
+<a class="text-sm font-bold uppercase tracking-widest hover:text-primary dark:hover:text-accent-lime transition-colors" href="#">Contact</a>
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                    Let's Talk
+                </button>
+</div>
+</div>
+</nav>
+<main class="max-w-[1200px] mx-auto px-6 lg:px-10 pb-20">
+<!-- Hero Section -->
+<section class="py-16 md:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 flex flex-col gap-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary dark:text-accent-lime w-fit">
+<span class="flex h-2 w-2 rounded-full bg-primary dark:bg-accent-lime animate-pulse"></span>
+<span class="text-[10px] font-bold uppercase tracking-[0.2em]">Available for projects</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-black leading-[1.1] tracking-[-0.04em] text-slate-900 dark:text-white">
+                    Crafting Digital <span class="text-primary dark:text-accent-lime italic">Experiences</span> with Precision.
+                </h1>
+<p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
+                    Specializing in high-impact web and mobile applications through research-driven design and bold aesthetics. I turn complex problems into elegant digital solutions.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-white h-14 px-8 rounded-xl font-bold text-lg hover:scale-[1.02] transition-transform flex items-center gap-3">
+                        View My Work
+                        <span class="material-symbols-outlined">arrow_downward</span>
+</button>
+<button class="border-2 border-slate-200 dark:border-[#2a3e41] h-14 px-8 rounded-xl font-bold text-lg hover:bg-slate-100 dark:hover:bg-[#1a2b2e] transition-colors">
+                        Read Bio
+                    </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative group">
+<div class="absolute -inset-4 bg-primary/10 dark:bg-accent-lime/5 rounded-[2rem] blur-2xl group-hover:bg-primary/20 transition-all duration-500"></div>
+<div class="relative bg-slate-200 dark:bg-[#1e2c2f] aspect-[4/5] rounded-[2rem] overflow-hidden border border-slate-200 dark:border-[#3c595d] shadow-2xl">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Abstract 3D architectural render with clean lines" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBF12YJUjOaCgvceTnK4AbEsPNDSIeiZ9-T6lrN-OIS2B7Mt4TZ8BBJW6wkqD2NZuEazHkEC5Vb2vO0mCB0CaOJHSUvgyeBraPXIPiLokSTgHXDKCd5YekGH8w3G-yb2epwL8uMpfn45THWNKKfzGJltF9sFQ70obuZckw0zZau03WRpallql1JaCflvjfZRmAHNdYVeogZe8fbgPPt_1nzDRjaK8sRk39mS-8PF-DZ9N0nlUAlMJWOlw1x5GKRq43zay1RhqXmg");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Expertise Section -->
+<section class="py-20 border-y border-slate-200 dark:border-[#2a3e41]">
+<div class="flex flex-col gap-12">
+<div class="max-w-2xl">
+<h2 class="text-primary dark:text-accent-lime text-xs font-bold uppercase tracking-[0.3em] mb-4">Core Expertise</h2>
+<h3 class="text-3xl md:text-4xl font-bold tracking-tight">Bringing a comprehensive approach to every digital product.</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="p-8 rounded-2xl bg-white dark:bg-[#1e2c2f] border border-slate-200 dark:border-[#3c595d] hover:border-primary dark:hover:border-accent-lime transition-colors group">
+<div class="size-12 rounded-xl bg-slate-100 dark:bg-background-dark flex items-center justify-center text-primary dark:text-accent-lime mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">palette</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Visual Identity</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Creating cohesive brand systems and visual languages that resonate with users across all touchpoints.</p>
+</div>
+<div class="p-8 rounded-2xl bg-white dark:bg-[#1e2c2f] border border-slate-200 dark:border-[#3c595d] hover:border-primary dark:hover:border-accent-lime transition-colors group">
+<div class="size-12 rounded-xl bg-slate-100 dark:bg-background-dark flex items-center justify-center text-primary dark:text-accent-lime mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">animation</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Prototyping</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Building high-fidelity interactive prototypes to validate workflows and user journeys before development.</p>
+</div>
+<div class="p-8 rounded-2xl bg-white dark:bg-[#1e2c2f] border border-slate-200 dark:border-[#3c595d] hover:border-primary dark:hover:border-accent-lime transition-colors group">
+<div class="size-12 rounded-xl bg-slate-100 dark:bg-background-dark flex items-center justify-center text-primary dark:text-accent-lime mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">bar_chart</span>
+</div>
+<h4 class="text-xl font-bold mb-3">UX Research</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Deep diving into user behavior and data-driven insights to inform architecture and functionality.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Selected Works Section -->
+<section class="py-24">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div>
+<h2 class="text-primary dark:text-accent-lime text-xs font-bold uppercase tracking-[0.3em] mb-4">Portfolio</h2>
+<h3 class="text-4xl md:text-5xl font-black tracking-tight">Selected Works</h3>
+</div>
+<div class="text-slate-500 text-sm font-medium">Showing 4 of 12 Projects</div>
+</div>
+<!-- Asymmetric Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Card -->
+<div class="md:col-span-8 group project-card relative overflow-hidden rounded-3xl cursor-pointer">
+<div class="aspect-[16/10] bg-slate-200 dark:bg-[#1e2c2f] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" data-alt="Modern analytics dashboard interface on desktop screen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCjPMQ-JyuE5hzEfthhpNjcuu4pZ5AhwzyArX1FCwvsSB4y5-Eki_uG_ApTj2BmkDPALj2SRAwTZ1_fVMyTTzH2f2ak1KJjLxBd4wao7I0EmZKGVwF6iVxzo6H8N7Uz06idDI4C3OSjv_pUJgdSEUGGEwSDQ1v0UI4VpNDxdhZ8-N2ItVDp-AvCbFOZ3OS7ZZ4j5JOxlAeRUWJMvrZbM42tJrZ6KQSOEPyYTpS0AkBpr_SdRoQ7cvqudPTJ9ptslg0ja3pNDmB0dw");'>
+</div>
+</div>
+<div class="absolute inset-0 bg-primary/80 opacity-0 project-overlay transition-opacity duration-500 flex flex-col justify-end p-10">
+<span class="text-accent-lime text-sm font-bold uppercase tracking-widest mb-2">Fintech</span>
+<h4 class="text-white text-3xl font-black mb-4">Lumina Wealth Management</h4>
+<p class="text-white/80 max-w-md mb-6">A complete overhaul of the investment dashboard for professional wealth managers.</p>
+<div class="flex items-center gap-2 text-white font-bold group/btn">
+                            View Project 
+                            <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-2">arrow_forward</span>
+</div>
+</div>
+<div class="mt-6 flex justify-between items-start md:hidden">
+<div>
+<h4 class="text-xl font-bold">Lumina Wealth Management</h4>
+<p class="text-slate-500">Fintech Platform</p>
+</div>
+</div>
+</div>
+<!-- Square Card -->
+<div class="md:col-span-4 group project-card relative overflow-hidden rounded-3xl cursor-pointer">
+<div class="aspect-square bg-slate-200 dark:bg-[#1e2c2f] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" data-alt="Eco-friendly mobile application interface showing green elements" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCaJBA3jITy_q8dhTjnPsdxqvuoV7JIIQ8ycegNk_n62d47z3HrPVyb82sgWgcT_z1LT4_xerNWNjPCRhbL6wq0w_hSFSlqPdFCbY6dyZc0hcG_2VHCitOch_zEbLycoHpLn5BHhRkj3U3JgOyEA035BlQF3qeIZaOyT2W8rA-i73TwKaJKDpSSOgVAbd1naO0gVxLDTTdopiHUF-_3Oh8BTv3zZizbFrvPgEbIRFUzjKnKhzPBHP6rdvXDrcQkAYdyKqx3BXG46A");'>
+</div>
+</div>
+<div class="absolute inset-0 bg-primary/80 opacity-0 project-overlay transition-opacity duration-500 flex flex-col justify-end p-8">
+<span class="text-accent-lime text-sm font-bold uppercase tracking-widest mb-2">E-commerce</span>
+<h4 class="text-white text-2xl font-black mb-4">Verde Marketplace</h4>
+<div class="flex items-center gap-2 text-white font-bold group/btn">
+                            View Case 
+                            <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-2">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Another Square Card -->
+<div class="md:col-span-4 group project-card relative overflow-hidden rounded-3xl cursor-pointer">
+<div class="aspect-square bg-slate-200 dark:bg-[#1e2c2f] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" data-alt="Health and wellness mobile app screens showing data viz" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGyIUBne10CDmNdnyxh31mD6EMWM6-N9xJP0OTLFAhQt1J9J_F4WzptNqXE0gqAi51LGQmNjVYsJo4OV-VWJWOMCHNR6tf3a3K7rITJ7Nh3U9iDjeqFfuAMuaQCcNBww8aIqhClNLltrrzX8lC6qHqHBJXymwaeIn8xpn8jRrm4_jSDvC_JetCZzJBr6Nc50mW1S2jISmpYCRvcrI-C-IUhUJcP5HXAVhBu5EmWfTqfy2KdYOrresXl4voREUezEJaYK3jtGHXeA");'>
+</div>
+</div>
+<div class="absolute inset-0 bg-primary/80 opacity-0 project-overlay transition-opacity duration-500 flex flex-col justify-end p-8">
+<span class="text-accent-lime text-sm font-bold uppercase tracking-widest mb-2">HealthTech</span>
+<h4 class="text-white text-2xl font-black mb-4">Pulse Fitness Tracker</h4>
+<div class="flex items-center gap-2 text-white font-bold group/btn">
+                            View Case 
+                            <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-2">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Another Large Card -->
+<div class="md:col-span-8 group project-card relative overflow-hidden rounded-3xl cursor-pointer">
+<div class="aspect-[16/10] bg-slate-200 dark:bg-[#1e2c2f] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" data-alt="SaaS dashboard with complex data visualization cards" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDB7zHMa4u5ww9YaWYr-G0ZDoD-__EDjdirq-rCK3hfQNbFQBXa-fAd5dfnHAt7X1lopOQ8_iVhSQKomTkiMM5S4H2QUBSs1Nb6IAxxCpi-6vi15hCjk3D6-BEvMzA7tWJANPJ7qgNfy826eSY4gJYXSCJfJKtcE1stavMxAQ98uopnto7MNICvwtUC9N7uib71KPDwn5iLfB9gWxEBUtHXaLpcuFx6nq9CAjjVWZfzXtLzxIpkJ1FUPOFN4sUEHxV8iI7G2LujMQ");'>
+</div>
+</div>
+<div class="absolute inset-0 bg-primary/80 opacity-0 project-overlay transition-opacity duration-500 flex flex-col justify-end p-10">
+<span class="text-accent-lime text-sm font-bold uppercase tracking-widest mb-2">SaaS</span>
+<h4 class="text-white text-3xl font-black mb-4">Nexus Data Suite</h4>
+<p class="text-white/80 max-w-md mb-6">Designing a scalable design system for a complex data analytics platform.</p>
+<div class="flex items-center gap-2 text-white font-bold group/btn">
+                            View Project 
+                            <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-2">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-20 flex justify-center">
+<button class="group flex items-center gap-4 text-xl font-bold border-b-2 border-primary dark:border-accent-lime pb-2 hover:gap-6 transition-all">
+                    View Archive Projects
+                    <span class="material-symbols-outlined">trending_flat</span>
+</button>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-20 p-12 md:p-20 rounded-[3rem] bg-primary dark:bg-[#1a2b2e] text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 -mr-20 -mt-20 size-80 bg-accent-lime/10 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 -ml-20 -mb-20 size-80 bg-white/5 rounded-full blur-3xl"></div>
+<div class="relative z-10 flex flex-col items-center text-center gap-8">
+<h2 class="text-4xl md:text-6xl font-black tracking-tight max-w-3xl leading-[1.1]">
+                    Have a project in mind? Let's build something <span class="text-accent-lime">exceptional</span> together.
+                </h2>
+<p class="text-white/70 text-lg md:text-xl max-w-xl">
+                    Currently accepting new projects for Q3 2024. Reach out for a free consultation.
+                </p>
+<div class="flex flex-wrap justify-center gap-6 mt-4">
+<button class="bg-white text-primary h-14 px-10 rounded-xl font-bold text-lg hover:scale-105 transition-transform flex items-center gap-3 shadow-xl">
+                        Contact Me
+                        <span class="material-symbols-outlined">mail</span>
+</button>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white h-14 px-10 rounded-xl font-bold text-lg hover:bg-white/20 transition-all flex items-center gap-3">
+                        Book a Call
+                        <span class="material-symbols-outlined">calendar_today</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="mt-32 pt-12 border-t border-slate-200 dark:border-[#2a3e41]">
+<div class="flex flex-col md:flex-row justify-between items-center gap-10">
+<div class="flex items-center gap-3">
+<div class="size-6 text-primary dark:text-accent-lime">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-sm font-black tracking-widest uppercase">UX/UI Designer</h2>
+</div>
+<div class="flex gap-10">
+<a class="text-sm font-bold text-slate-500 hover:text-primary dark:hover:text-accent-lime transition-colors" href="#">LinkedIn</a>
+<a class="text-sm font-bold text-slate-500 hover:text-primary dark:hover:text-accent-lime transition-colors" href="#">Dribbble</a>
+<a class="text-sm font-bold text-slate-500 hover:text-primary dark:hover:text-accent-lime transition-colors" href="#">Instagram</a>
+<a class="text-sm font-bold text-slate-500 hover:text-primary dark:hover:text-accent-lime transition-colors" href="#">Behance</a>
+</div>
+<div class="text-slate-500 text-xs font-medium uppercase tracking-widest">
+                    © 2024 Built with Precision
+                </div>
+</div>
+</footer>
+</main>
+</body></html>
