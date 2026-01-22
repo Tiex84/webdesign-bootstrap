@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - UX/UI Designer</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .grid-item { width: 25%; }
+        .grid-item--width2 { width: 50%; }
+        img {
+            width: 100%;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        .card {
+            border: 1px solid white;
+            border-radius: 8px;
+            padding: 10px;
+        }
+    </style>
+
+  </head>
+
+    <body>
+
+        <h1>Works</h1>
+
+        <section id="works">
+
+            <div class="button-group filter-button-group">
+                <button data-filter="*">show all</button>
+                <button data-filter=".grafica">Grafica</button>
+                <button data-filter=".stampa">Stampa</button>
+                <button data-filter=".social">Social</button>
+                <button data-filter=".web">Web</button>
+            </div>
+
+
+            <div class="grid">
+            
+                <div class="grid-item grafica">
+                    <div class="card">
+                        <h2>Lavoro1</h2>
+                        <img src="img/lavoro1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="grid-item grid-item--width2 web">
+                    <div class="card">
+                        <h2>Lavoro2</h2>
+                        <img src="img/lavoro2.jpg" alt="">
+                    </div>
+                </div>
+                
+                <div class="grid-item grafica">
+                    <div class="card">
+                        <h2>Lavoro3</h2>
+                        <img src="img/lavoro3.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="grid-item social">
+                    <div class="card">
+                        <h2>Lavoro3 bis</h2>
+                        <img src="img/lavoro3bis.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="grid-item stampa">
+                    <div class="card">
+                        <h2>Lavoro4</h2>
+                        <img src="img/lavoro4.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="grid-item social">
+                    <div class="card"> 
+                        <h2>Lavoro5</h2>
+                        <img src="img/lavoro5.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+        <script>
+            var elem = document.querySelector('.grid');
+            var iso = new Isotope( elem, {
+            // options
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows'
+            });
+
+            // Filtraggio degli elementi
+            var filterButtons = document.querySelectorAll('.filter-button-group button');
+            filterButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    var filterValue = this.getAttribute('data-filter');
+                    iso.arrange({ filter: filterValue });
+                });
+            });
+
+        </script>
+
+    </body>
+
+  </html>
